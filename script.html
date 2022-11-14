@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+    <head>
+
+    </head>
+    <body>
+        <script>
+            var s = "GTCCTTGACTGGAGGCTGA";
+            for (var i = 0; i < s.length; i++) {
+                document.write(DNAtoRNA(s.charAt(i)));
+            }
+            function DNAtoRNA(a){
+
+                switch (a)
+                {
+                    case "C":
+                        return "G"
+                    case "G":
+                        return "C"
+                    case "T":
+                        return "A"
+                    case "A":
+                        return "U"
+                }
+
+            }
+        </script>
+    </body>
+   
+</html>
